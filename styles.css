@@ -1,0 +1,179 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000; /* Fallback for browsers that don't support GIF backgrounds */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(46, 0, 62, 0.8); /* Dark purple with some transparency */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+header .logo {
+    height: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('https://media.giphy.com/media/TUa9gWz5hJ5mLfX9xD/giphy.gif') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 5, 14, 0.7); /* Semi-transparent dark background */
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Features Section Styling */
+#features {
+    background-color: #1c002b; /* Darker purple */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    margin: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+/* Pricing Section Styling */
+#pricing {
+    background-color: #2e003e; /* Dark purple */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 30%;
+    background-color: #1c002b; /* Darker purple */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.plan h3 {
+    font-size: 1.5em;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: rgba(133, 51, 255, 1); /* Bright accent color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Download Section Styling */
+#download {
+    background-color: #1c002b; /* Darker purple */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#download .cta-button {
+    background-color: rgba(133, 51, 255, 1); /* Bright accent color */
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #2e003e; /* Dark purple */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-button {
+    background-color: rgba(133, 51, 255, 1); /* Bright accent color */
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: rgba(133, 51, 255, 0.8); /* Slightly darker on hover */
+}
+
+#contact-info {
+    display: none; /* Hidden until copied */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1c002b; /* Darker purple */
+    padding: 10px 20px;
+    text-align: center;
+}

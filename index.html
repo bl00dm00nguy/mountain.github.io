@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Mountain Logo" class="logo">
+        </div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Experience the Power of Mountain</h1>
+        <p>Streamline your workflow with cutting-edge technology.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>OS</h3>
+                <p>Compatibility with every OS.</p>
+            </div>
+            <div class="feature">
+                <h3>Free!</h3>
+                <p>Right now it is free.</p>
+            </div>
+            <div class="feature">
+                <h3>Games.</h3>
+                <p>Compatibility with almost every game.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>$10/month</p>
+                <ul>
+                    <li>Standard Optimization</li>
+                    <li>Community Support</li>
+                </ul>
+                <a href="#" class="cta-button">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <p>$20/month</p>
+                <ul>
+                    <li>Enhanced Optimization</li>
+                    <li>Priority Support</li>
+                    <li>Customizable UI</li>
+                </ul>
+                <a href="#" class="cta-button">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>$30/month</p>
+                <ul>
+                    <li>Premium Optimization</li>
+                    <li>Dedicated Support</li>
+                    <li>Advanced Customization</li>
+                    <li>Exclusive Modding Tools</li>
+                </ul>
+                <a href="#" class="cta-button">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <h2>Download Mountain</h2>
+        <p>Available for Windows and Linux.</p>
+        <a href="Mountain.exe" class="cta-button">Download Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <button class="contact-button" onclick="copyToClipboard()">Copy Contact Information</button>
+        <p id="contact-info">relpopded@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mountain Software. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            const contactInfo = document.getElementById('contact-info').textContent;
+            navigator.clipboard.writeText(contactInfo).then(() => {
+                alert('Contact information copied to clipboard!');
+            }, (err) => {
+                console.error('Failed to copy contact information: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
