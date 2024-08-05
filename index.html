@@ -86,7 +86,7 @@
     <section id="download">
         <h2>Download Mountain</h2>
         <p>Available for Windows and Linux.</p>
-        <a href="Mountain.exe" class="cta-button">Download Now</a>
+        <a href="#" class="cta-button" onclick="handleDownload()">Download Now</a>
     </section>
 
     <!-- Contact Section -->
@@ -102,6 +102,21 @@
     </footer>
 
     <script>
+        function handleDownload() {
+            // Trigger file download
+            const link = document.createElement('a');
+            link.href = 'Mountain.exe';
+            link.download = 'Mountain.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Redirect to download confirmation page
+            setTimeout(() => {
+                window.location.href = 'download.html';
+            }, 500); // Short delay to ensure download starts before redirection
+        }
+
         function copyToClipboard() {
             const contactInfo = document.getElementById('contact-info').textContent;
             navigator.clipboard.writeText(contactInfo).then(() => {
