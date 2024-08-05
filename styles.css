@@ -177,3 +177,33 @@ footer {
     padding: 10px 20px;
     text-align: center;
 }
+/* Download Thank You Section Styling */
+.download-thank-you {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1c002b; /* Darker purple */
+    color: #fff;
+}
+
+.download-thank-you h1 {
+    margin-bottom: 20px;
+}
+
+.download-thank-you p {
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: rgba(133, 51, 255, 1); /* Bright accent color */
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(133, 51, 255, 0.8); /* Slightly darker on hover */
+}
